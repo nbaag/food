@@ -1,0 +1,147 @@
+@font-face {
+  font-family: "Reey";
+  src: url("../fonts/Reey-Regular.otf") format("opentype");
+}
+
+@mixin button($bgcolor, $color) {
+  border-radius: 30px;
+  padding: 8px 35px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 1.1em;
+  font-family: 'Open Sans', sans-serif;
+  background-color: $bgcolor;
+  color: $color;
+}
+
+@mixin absimg($top, $right) {
+  position: absolute;
+  top: $top;
+  right: $right;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+}
+
+body {
+  background-image: url("../img/HeaderBackground.png");
+  background-size: cover;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1150px;
+  // border: 1px solid red;
+}
+
+header {
+  height: 96px;
+
+    .menu{
+    max-width: 1360px;
+    text-transform: uppercase;
+    font-size: 1.1em;
+    padding-top: 2em;
+    float: right;
+
+    .menu__item{
+      margin: 0 1.5em;
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .menu__input{
+      margin: auto 0;
+      border-radius: 30px;
+      max-width: 120px;
+      line-height: 30px;
+      margin-right: 2em;
+    }
+  }
+}
+
+main{
+  .about {
+    margin-bottom: 11em;
+    h1 {
+      font-family: "Reey";
+      left: 100px;
+      font-size: 5em;
+      color:#fff;
+    }
+    h2 {
+      margin-top: 5em;
+      font-style: italic;
+      color:#fff;
+    }
+    .about__btn {
+      @include button(#fff, #000);
+      margin-top: 60px;
+    }
+    .about__text {
+      max-width: 480px;
+      margin-top: 1.5em;
+      color: #fff;
+      font-size: 1.2em;
+      font-style: italic;
+      font-weight: 400;
+    }
+    .about__logo {
+      margin-bottom: 4em;
+    }
+    .about__spaghetti {
+      @include absimg(10em, 14em);
+      max-width: 35em;
+    }
+    .about__souce {
+      @include absimg(40em, 36em)
+    }
+    .about__leafs {
+      @include absimg(35em, 8em)
+    }
+  }
+  .example {
+    background-color: #fff;
+    padding-bottom: 50px;
+    .example__title {
+      padding-top: 1em;
+      margin-bottom: 1em;
+      text-align: center;
+      font-family: "Reey";
+      font-size: 5em;
+    }
+    .example__text {
+      text-align: center;
+      font-size: 1.5em;
+    }
+    .example__img {
+      display: block;
+      margin: 0 auto;
+    }
+    .example__colums {
+      margin-top: 6em;
+      display: flex;
+      .example__colum1 {
+        flex: 33.33%
+      }
+      .example__colum2 {
+        flex: 33.33%
+      }
+      .example__colum3 {
+        flex: 33.33%
+      }
+    } // example__colums
+    .example__btn {
+      @include button(#343434, #fff);
+      display: block;
+      margin: 128px auto 0 auto;
+    }
+  }
+}
+
+
