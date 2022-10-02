@@ -5,12 +5,21 @@
 
 @mixin button($bgcolor, $color) {
   border-radius: 30px;
-  padding: 8px 35px;
+  padding: 12px 70px;
   font-weight: 600;
   text-transform: uppercase;
-  font-size: 1.1em;
+  font-size: 1.4em;
   font-family: 'Open Sans', sans-serif;
   background-color: $bgcolor;
+  color: $color;
+}
+
+@mixin title($color) {
+  padding-top: 1em;
+  margin-bottom: 1em;
+  text-align: center;
+  font-family: "Reey";
+  font-size: 5em;
   color: $color;
 }
 
@@ -28,8 +37,8 @@
 }
 
 body {
-  background-image: url("../img/HeaderBackground.png");
-  background-size: cover;
+
+  
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -40,8 +49,6 @@ body {
 }
 
 header {
-  height: 96px;
-
     .menu{
     max-width: 1360px;
     text-transform: uppercase;
@@ -67,7 +74,9 @@ header {
 
 main{
   .about {
-    margin-bottom: 11em;
+    background-image: url("../img/HeaderBackground.png");
+    background-size: cover;
+    padding-bottom: 220px;
     h1 {
       font-family: "Reey";
       left: 100px;
@@ -92,7 +101,8 @@ main{
       font-weight: 400;
     }
     .about__logo {
-      margin-bottom: 4em;
+      margin-top: 10em;
+      margin-bottom: 3em;
     }
     .about__spaghetti {
       @include absimg(10em, 14em);
@@ -104,16 +114,12 @@ main{
     .about__leafs {
       @include absimg(35em, 8em)
     }
-  }
+  } //about
   .example {
     background-color: #fff;
-    padding-bottom: 50px;
+    padding-bottom: 3em;
     .example__title {
-      padding-top: 1em;
-      margin-bottom: 1em;
-      text-align: center;
-      font-family: "Reey";
-      font-size: 5em;
+      @include title(#000)
     }
     .example__text {
       text-align: center;
@@ -141,7 +147,32 @@ main{
       display: block;
       margin: 128px auto 0 auto;
     }
-  }
+  } //example
+  .info {
+    background-color: #27292c;
+    padding-bottom: 3em;
+    .info__title {
+      @include title(#fff)
+    }
+    .info__colums {
+      display: flex;
+      .info__colum1{
+        color: #fff;
+        flex: 50%;
+        margin-right: 34px;
+      }
+      .info__colum2{
+        color: #fff;
+        flex: 50%;
+        margin-left: 34px;
+      }
+    }
+    .info__btn {
+      @include button(#fff, #000);
+      display: block;
+      margin: 100px auto 0 auto;
+    }
+  } //info
 }
 
 
