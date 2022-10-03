@@ -15,7 +15,7 @@ body {
 
 .container {
   margin: 0 auto;
-  max-width: 1150px;
+  max-width: 1000px;
 }
 
 header .menu {
@@ -163,19 +163,12 @@ main .info .info__colums {
   display: -ms-flexbox;
   display: flex;
 }
-main .info .info__colums .info__colum1 {
+main .info .info__colums .info__column {
   color: #fff;
   -webkit-box-flex: 50%;
       -ms-flex: 50%;
           flex: 50%;
   margin-right: 34px;
-}
-main .info .info__colums .info__colum2 {
-  color: #fff;
-  -webkit-box-flex: 50%;
-      -ms-flex: 50%;
-          flex: 50%;
-  margin-left: 34px;
 }
 main .info .info__btn {
   border-radius: 30px;
@@ -188,4 +181,41 @@ main .info .info__btn {
   color: #000;
   display: block;
   margin: 100px auto 0 auto;
+}
+main .promo {
+  padding: 2em 0;
+}
+main .promo .promo__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+main .promo .promo__column {
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
+}
+main .promo .promo__img {
+  width: 28em;
+}
+main .promo .promo__title {
+  font-size: 3em;
+  font-weight: bold;
+}
+main .promo .promo__text {
+  font-size: 1.2em;
+}
+main .promo .promo__btn {
+  border-radius: 30px;
+  padding: 12px 70px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 1.4em;
+  font-family: "Open Sans", sans-serif;
+  background-color: #000;
+  color: #fff;
+  margin-top: 1.2em;
 }
