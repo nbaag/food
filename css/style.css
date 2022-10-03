@@ -119,17 +119,7 @@ main .example .example__colums {
   display: -ms-flexbox;
   display: flex;
 }
-main .example .example__colums .example__colum1 {
-  -webkit-box-flex: 33.33%;
-      -ms-flex: 33.33%;
-          flex: 33.33%;
-}
-main .example .example__colums .example__colum2 {
-  -webkit-box-flex: 33.33%;
-      -ms-flex: 33.33%;
-          flex: 33.33%;
-}
-main .example .example__colums .example__colum3 {
+main .example .example__colums .example__column {
   -webkit-box-flex: 33.33%;
       -ms-flex: 33.33%;
           flex: 33.33%;

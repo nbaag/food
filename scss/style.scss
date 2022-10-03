@@ -129,13 +129,7 @@ main{
     .example__colums {
       margin-top: 6em;
       display: flex;
-      .example__colum1 {
-        flex: 33.33%
-      }
-      .example__colum2 {
-        flex: 33.33%
-      }
-      .example__colum3 {
+      .example__column {
         flex: 33.33%
       }
     } // example__colums
