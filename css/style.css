@@ -209,3 +209,41 @@ main .promo .promo__btn {
   color: #fff;
   margin-top: 1.2em;
 }
+main .pizza {
+  background-image: url("../img/HeaderBackground.png");
+  background-size: cover;
+  position: relative;
+  padding-bottom: 45em;
+}
+main .pizza .pizza__title {
+  padding-top: 1em;
+  margin-bottom: 1em;
+  text-align: center;
+  font-family: "Reey";
+  font-size: 5em;
+  color: #fff;
+}
+main .pizza .pizza__subtitle {
+  color: #fff;
+  max-width: 800px;
+  text-align: center;
+  font-size: 1.4em;
+  margin: auto;
+}
+main .pizza .pizza__leafs {
+  position: absolute;
+  top: -10em;
+  right: 4em;
+}
+main .pizza .pizza__img {
+  position: absolute;
+  top: 28em;
+  right: 10em;
+  width: 45em;
+}
+main .pizza .pizza__slice {
+  position: absolute;
+  top: 54em;
+  right: 40em;
+  width: 25em;
+}

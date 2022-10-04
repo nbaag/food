@@ -182,6 +182,35 @@ main{
       @include button(#000,#fff);
       margin-top: 1.2em;
     }
+  } //promo
+  .pizza {
+    background-image: url("../img/HeaderBackground.png");
+    background-size: cover;
+    position: relative;
+    padding-bottom: 45em ;
+    .pizza__title {
+      @include title(#fff)
+    }
+    .pizza__subtitle {
+      color: #fff;
+      max-width: 800px;
+      text-align: center;
+      font-size: 1.4em;
+      margin: auto;
+    }
+    .pizza__leafs {
+      @include absimg(-10em, 4em)
+    }
+    .pizza__img {
+      @include absimg(28em, 10em);
+      width: 45em;
+    }
+    .pizza__slice {
+      @include absimg(54em, 40em);
+      width: 25em;
+
+
+    }
   }
 }
 
