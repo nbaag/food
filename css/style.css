@@ -15,22 +15,24 @@ body {
 
 .container {
   margin: 0 auto;
-  max-width: 1000px;
+  max-width: 1170px;
 }
 
-header .menu {
+.menu {
   max-width: 1360px;
   text-transform: uppercase;
   font-size: 1.1em;
   padding-top: 2em;
   float: right;
 }
-header .menu .menu__item {
+
+.menu__item {
   margin: 0 1.5em;
   color: #fff;
   text-decoration: none;
 }
-header .menu .menu__input {
+
+.menu__input {
   margin: auto 0;
   border-radius: 30px;
   max-width: 120px;
@@ -38,23 +40,24 @@ header .menu .menu__input {
   margin-right: 2em;
 }
 
-main .about {
+.about {
   background-image: url("../img/HeaderBackground.png");
   background-size: cover;
   padding-bottom: 220px;
 }
-main .about h1 {
+.about h1 {
   font-family: "Reey";
   left: 100px;
   font-size: 5em;
   color: #fff;
 }
-main .about h2 {
+.about h2 {
   margin-top: 5em;
   font-style: italic;
   color: #fff;
 }
-main .about .about__btn {
+
+.about__btn {
   border-radius: 30px;
   padding: 12px 70px;
   font-weight: 600;
@@ -65,7 +68,8 @@ main .about .about__btn {
   color: #000;
   margin-top: 60px;
 }
-main .about .about__text {
+
+.about__text {
   max-width: 480px;
   margin-top: 1.5em;
   color: #fff;
@@ -73,31 +77,37 @@ main .about .about__text {
   font-style: italic;
   font-weight: 400;
 }
-main .about .about__logo {
+
+.about__logo {
   margin-top: 10em;
   margin-bottom: 3em;
 }
-main .about .about__spaghetti {
+
+.about__spaghetti {
   position: absolute;
   top: 10em;
   right: 14em;
   max-width: 35em;
 }
-main .about .about__souce {
+
+.about__souce {
   position: absolute;
   top: 40em;
   right: 36em;
 }
-main .about .about__leafs {
+
+.about__leafs {
   position: absolute;
   top: 35em;
   right: 8em;
 }
-main .example {
+
+.example {
   background-color: #fff;
   padding-bottom: 3em;
 }
-main .example .example__title {
+
+.example__title {
   padding-top: 1em;
   margin-bottom: 1em;
   text-align: center;
@@ -105,26 +115,30 @@ main .example .example__title {
   font-size: 5em;
   color: #000;
 }
-main .example .example__text {
+
+.example__text {
   text-align: center;
   font-size: 1.5em;
 }
-main .example .example__img {
+
+.example__img {
   display: block;
   margin: 0 auto;
 }
-main .example .example__colums {
+
+.example__colums {
   margin-top: 6em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-main .example .example__colums .example__column {
+.example__colums .example__column {
   -webkit-box-flex: 33.33%;
       -ms-flex: 33.33%;
           flex: 33.33%;
 }
-main .example .example__btn {
+
+.example__btn {
   border-radius: 30px;
   padding: 12px 70px;
   font-weight: 600;
@@ -136,11 +150,13 @@ main .example .example__btn {
   display: block;
   margin: 128px auto 0 auto;
 }
-main .info {
+
+.info {
   background-color: #27292c;
   padding-bottom: 3em;
 }
-main .info .info__title {
+
+.info__title {
   padding-top: 1em;
   margin-bottom: 1em;
   text-align: center;
@@ -148,19 +164,22 @@ main .info .info__title {
   font-size: 5em;
   color: #fff;
 }
-main .info .info__colums {
+
+.info__colums {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-main .info .info__colums .info__column {
+
+.info__column {
   color: #fff;
   -webkit-box-flex: 50%;
       -ms-flex: 50%;
           flex: 50%;
   margin-right: 34px;
 }
-main .info .info__btn {
+
+.info__btn {
   border-radius: 30px;
   padding: 12px 70px;
   font-weight: 600;
@@ -172,10 +191,13 @@ main .info .info__btn {
   display: block;
   margin: 100px auto 0 auto;
 }
-main .promo {
+
+.promo {
   padding: 2em 0;
 }
-main .promo .promo__row {
+
+.promo__row {
+  margin-top: 1em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -183,22 +205,27 @@ main .promo .promo__row {
       -ms-flex-align: center;
           align-items: center;
 }
-main .promo .promo__column {
+
+.promo__column {
   -webkit-box-flex: 50%;
       -ms-flex: 50%;
           flex: 50%;
 }
-main .promo .promo__img {
+
+.promo__img {
   width: 28em;
 }
-main .promo .promo__title {
+
+.promo__title {
   font-size: 3em;
   font-weight: bold;
 }
-main .promo .promo__text {
+
+.promo__text {
   font-size: 1.2em;
 }
-main .promo .promo__btn {
+
+.promo__btn {
   border-radius: 30px;
   padding: 12px 70px;
   font-weight: 600;
@@ -209,13 +236,15 @@ main .promo .promo__btn {
   color: #fff;
   margin-top: 1.2em;
 }
-main .pizza {
+
+.pizza {
   background-image: url("../img/HeaderBackground.png");
   background-size: cover;
   position: relative;
   padding-bottom: 45em;
 }
-main .pizza .pizza__title {
+
+.pizza__title {
   padding-top: 1em;
   margin-bottom: 1em;
   text-align: center;
@@ -223,27 +252,83 @@ main .pizza .pizza__title {
   font-size: 5em;
   color: #fff;
 }
-main .pizza .pizza__subtitle {
+
+.pizza__subtitle {
   color: #fff;
   max-width: 800px;
   text-align: center;
   font-size: 1.4em;
   margin: auto;
 }
-main .pizza .pizza__leafs {
+
+.pizza__leafs {
   position: absolute;
   top: -10em;
   right: 4em;
 }
-main .pizza .pizza__img {
+
+.pizza__img {
   position: absolute;
   top: 28em;
   right: 10em;
   width: 45em;
 }
-main .pizza .pizza__slice {
+
+.pizza__slice {
   position: absolute;
   top: 54em;
   right: 40em;
   width: 25em;
+}
+
+@media (max-width: 1170px) {
+  .container {
+    max-width: 970px;
+  }
+
+  .menu {
+    font-size: 0.75em;
+  }
+
+  .menu__input {
+    display: none;
+  }
+
+  .example__img {
+    width: 14em;
+  }
+
+  .promo__img {
+    width: 20em;
+  }
+
+  .img {
+    display: none;
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    max-width: 750px;
+  }
+
+  .example__img {
+    width: 10em;
+  }
+
+  .promo__img {
+    width: 13em;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    max-width: none;
+  }
+
+  .example__img {
+    width: 5em;
+  }
+
+  .promo__img {
+    display: none;
+  }
 }

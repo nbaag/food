@@ -29,6 +29,9 @@
   right: $right;
 }
 
+
+
+
 *{
   padding: 0;
   margin: 0;
@@ -42,176 +45,225 @@ body {
 
 .container {
   margin: 0 auto;
-  max-width: 1000px;
+  max-width: 1170px;
   // border: 1px solid red;
 }
 
-header {
-    .menu{
-    max-width: 1360px;
-    text-transform: uppercase;
-    font-size: 1.1em;
-    padding-top: 2em;
-    float: right;
 
-    .menu__item{
-      margin: 0 1.5em;
-      color: #fff;
-      text-decoration: none;
-    }
-    .menu__input{
-      margin: auto 0;
-      border-radius: 30px;
-      max-width: 120px;
-      line-height: 30px;
-      margin-right: 2em;
-    }
-  }
+.menu{
+max-width: 1360px;
+text-transform: uppercase;
+font-size: 1.1em;
+padding-top: 2em;
+float: right;
 }
-
-main{
-  .about {
-    background-image: url("../img/HeaderBackground.png");
-    background-size: cover;
-    padding-bottom: 220px;
-    h1 {
-      font-family: "Reey";
-      left: 100px;
-      font-size: 5em;
-      color:#fff;
-    }
-    h2 {
-      margin-top: 5em;
-      font-style: italic;
-      color:#fff;
-    }
-    .about__btn {
-      @include button(#fff, #000);
-      margin-top: 60px;
-    }
-    .about__text {
-      max-width: 480px;
-      margin-top: 1.5em;
-      color: #fff;
-      font-size: 1.2em;
-      font-style: italic;
-      font-weight: 400;
-    }
-    .about__logo {
-      margin-top: 10em;
-      margin-bottom: 3em;
-    }
-    .about__spaghetti {
-      @include absimg(10em, 14em);
-      max-width: 35em;
-    }
-    .about__souce {
-      @include absimg(40em, 36em)
-    }
-    .about__leafs {
-      @include absimg(35em, 8em)
-    }
-  } //about
-  .example {
-    background-color: #fff;
-    padding-bottom: 3em;
-    .example__title {
-      @include title(#000)
-    }
-    .example__text {
-      text-align: center;
-      font-size: 1.5em;
-    }
-    .example__img {
-      display: block;
-      margin: 0 auto;
-    }
-    .example__colums {
-      margin-top: 6em;
-      display: flex;
-      .example__column {
-        flex: 33.33%
-      }
-    } // example__colums
-    .example__btn {
-      @include button(#343434, #fff);
-      display: block;
-      margin: 128px auto 0 auto;
-    }
-  } //example
-  .info {
-    background-color: #27292c;
-    padding-bottom: 3em;
-    .info__title {
-      @include title(#fff)
-    }
-    .info__colums {
-      display: flex;
-      .info__column{
-        color: #fff;
-        flex: 50%;
-        margin-right: 34px;
-      }
-    }
-    .info__btn {
-      @include button(#fff, #000);
-      display: block;
-      margin: 100px auto 0 auto;
-    }
-  } //info
-  .promo {
-    padding: 2em 0;
-    .promo__row {
-      display: flex;
-      align-items: center;
-    }
-    .promo__column {
-      flex: 50%;
-    }
-    .promo__img {
-      width: 28em;
-    }
-    .promo__title {
-      font-size: 3em;
-      font-weight: bold;
-    }
-    .promo__text {
-      font-size: 1.2em;
-    }
-    .promo__btn {
-      @include button(#000,#fff);
-      margin-top: 1.2em;
-    }
-  } //promo
-  .pizza {
-    background-image: url("../img/HeaderBackground.png");
-    background-size: cover;
-    position: relative;
-    padding-bottom: 45em ;
-    .pizza__title {
-      @include title(#fff)
-    }
-    .pizza__subtitle {
-      color: #fff;
-      max-width: 800px;
-      text-align: center;
-      font-size: 1.4em;
-      margin: auto;
-    }
-    .pizza__leafs {
-      @include absimg(-10em, 4em)
-    }
-    .pizza__img {
-      @include absimg(28em, 10em);
-      width: 45em;
-    }
-    .pizza__slice {
-      @include absimg(54em, 40em);
-      width: 25em;
-
-
-    }
-  }
+.menu__item{
+  margin: 0 1.5em;
+  color: #fff;
+  text-decoration: none;
+}
+.menu__input{
+  margin: auto 0;
+  border-radius: 30px;
+  max-width: 120px;
+  line-height: 30px;
+  margin-right: 2em;
 }
 
 
+//about======================
+.about {
+  background-image: url("../img/HeaderBackground.png");
+  background-size: cover;
+  padding-bottom: 220px;
+  h1 {
+    font-family: "Reey";
+    left: 100px;
+    font-size: 5em;
+    color:#fff;
+  }
+  h2 {
+    margin-top: 5em;
+    font-style: italic;
+    color:#fff;
+  }
+}
+.about__btn {
+  @include button(#fff, #000);
+  margin-top: 60px;
+}
+.about__text {
+  max-width: 480px;
+  margin-top: 1.5em;
+  color: #fff;
+  font-size: 1.2em;
+  font-style: italic;
+  font-weight: 400;
+}
+.about__logo {
+  margin-top: 10em;
+  margin-bottom: 3em;
+}
+.about__spaghetti {
+  @include absimg(10em, 14em);
+  max-width: 35em;
+}
+.about__souce {
+  @include absimg(40em, 36em)
+}
+.about__leafs {
+  @include absimg(35em, 8em)
+}
+
+//example============================
+.example {
+  background-color: #fff;
+  padding-bottom: 3em;
+}
+.example__title {
+  @include title(#000)
+}
+.example__text {
+  text-align: center;
+  font-size: 1.5em;
+}
+.example__img {
+  display: block;
+  margin: 0 auto;
+}
+.example__colums {
+  margin-top: 6em;
+  display: flex;
+  .example__column {
+    flex: 33.33%
+  }
+}
+.example__btn {
+  @include button(#343434, #fff);
+  display: block;
+  margin: 128px auto 0 auto;
+}
+
+//info==============================
+.info {
+  background-color: #27292c;
+  padding-bottom: 3em;
+}
+.info__title {
+  @include title(#fff)
+}
+.info__colums {
+  display: flex;
+}
+.info__column{
+  color: #fff;
+  flex: 50%;
+  margin-right: 34px;
+}
+.info__btn {
+  @include button(#fff, #000);
+  display: block;
+  margin: 100px auto 0 auto;
+}
+
+//promo================================
+.promo {
+  padding: 2em 0;
+}
+.promo__row {
+  margin-top: 1em;
+  display: flex;
+  align-items: center;
+}
+.promo__column {
+  flex: 50%;
+}
+.promo__img {
+  width: 28em;
+}
+.promo__title {
+  font-size: 3em;
+  font-weight: bold;
+}
+.promo__text {
+  font-size: 1.2em;
+}
+.promo__btn {
+  @include button(#000,#fff);
+  margin-top: 1.2em;
+}
+
+//pizza======================================
+.pizza {
+  background-image: url("../img/HeaderBackground.png");
+  background-size: cover;
+  position: relative;
+  padding-bottom: 45em ;
+}
+.pizza__title {
+  @include title(#fff)
+}
+.pizza__subtitle {
+  color: #fff;
+  max-width: 800px;
+  text-align: center;
+  font-size: 1.4em;
+  margin: auto;
+}
+.pizza__leafs {
+  @include absimg(-10em, 4em)
+}
+.pizza__img {
+  @include absimg(28em, 10em);
+  width: 45em;
+}
+.pizza__slice {
+  @include absimg(54em, 40em);
+  width: 25em;
+}
+
+//MEDIA=================================
+@media (max-width:1170px) {
+  .container {
+    max-width: 970px;
+  }
+  .menu {
+    font-size: 0.75em;
+  }
+  .menu__input {
+    display: none;
+  }
+  .example__img {
+    width: 14em;
+  }
+  .promo__img {
+    width: 20em;
+  }
+  .img {
+    display: none;
+  }
+
+}
+@media (max-width:992px) {
+  .container {
+    max-width: 750px;
+  }
+  .example__img {
+    width: 10em;
+  }
+  .promo__img {
+    width: 13em;
+  }
+
+}
+@media (max-width:767px) {
+  .container {
+    max-width: none;
+  }
+  .example__img {
+    width: 5em;
+  }
+  .promo__img {
+    display: none;
+  }
+}
