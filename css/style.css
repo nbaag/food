@@ -61,20 +61,41 @@ body {
   z-index: 1;
 }
 
+.adaptive-menu {
+  display: none;
+  font-size: 1.6em;
+  position: absolute;
+  background-color: #000;
+  right: 0;
+  top: 1em;
+  max-width: 130px;
+}
+.adaptive-menu a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.isActive {
+  display: block;
+}
+
 .about {
   background-image: url("../img/HeaderBackground.png");
   background-size: cover;
   padding-bottom: 220px;
 }
-.about h1 {
-  font-family: "Reey";
-  left: 100px;
-  font-size: 5em;
-  color: #fff;
-}
 .about h2 {
   margin-top: 5em;
   font-style: italic;
+  color: #fff;
+}
+
+.about__title {
+  font-family: "Reey";
+  left: 100px;
+  font-size: 5em;
   color: #fff;
 }
 
@@ -88,6 +109,8 @@ body {
   background-color: #fff;
   color: #000;
   margin-top: 60px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .about__text {
@@ -303,6 +326,18 @@ body {
 }
 
 @media (max-width: 1170px) {
+  .about__logo {
+    margin: 2em 1em;
+  }
+
+  .about {
+    padding-bottom: 2em;
+  }
+
+  .about h2 {
+    margin-top: 2em;
+  }
+
   .container {
     max-width: 970px;
   }
@@ -313,6 +348,19 @@ body {
 
   .menu__input {
     display: none;
+  }
+
+  .about__btn {
+    display: block;
+    margin: 2em auto;
+  }
+
+  .about__text {
+    text-align: center;
+  }
+
+  .title {
+    font-size: 2em;
   }
 
   .hamburger {
@@ -329,6 +377,10 @@ body {
 
   .img {
     display: none;
+  }
+
+  .pizza {
+    padding-bottom: 2em;
   }
 }
 @media (max-width: 992px) {
@@ -351,6 +403,14 @@ body {
 
   .example__img {
     width: 5em;
+  }
+
+  .promo__row {
+    text-align: center;
+  }
+
+  .img-column {
+    display: none;
   }
 
   .promo__img {
