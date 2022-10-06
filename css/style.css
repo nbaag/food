@@ -40,6 +40,27 @@ body {
   margin-right: 2em;
 }
 
+.hamburger {
+  display: none;
+  position: relative;
+  z-index: 1;
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+  margin-right: 10px;
+}
+.hamburger span {
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background-color: #fff;
+  border-radius: 6px;
+  z-index: 1;
+}
+
 .about {
   background-image: url("../img/HeaderBackground.png");
   background-size: cover;
@@ -286,12 +307,16 @@ body {
     max-width: 970px;
   }
 
-  .menu {
-    font-size: 0.75em;
+  .menu__item {
+    display: none;
   }
 
   .menu__input {
     display: none;
+  }
+
+  .hamburger {
+    display: block;
   }
 
   .example__img {
